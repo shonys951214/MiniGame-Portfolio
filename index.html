@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>타자연습게임</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index2.js" defer></script>
+  </head>
+  <body>
+
+  
+  <div class="noti">
+    <span>시작버튼을 눌러주세요.</span>
+    <button id="startBtn" class="remoteBtn">시작하기</button>
+  </div>
+
+  <section>
+    <!-- Header -->
+    <div class="game_header">타자연습게임</div>
+
+    <!-- 남은life, score -->
+    <div class="info_wrap">
+      <div class="info_lives"></div>
+      <!-- 점수 or 타수 -->
+      <div class="info_score"></div> 
+    </div>
+
+    <!-- 게임섹션 -->
+    <div class="game_content">
+        <div class="word_wrap">
+
+          <div class="wordCard prev prev2" style="visibility:hidden;"></div>
+          <div class="wordCard prev prev1" style="visibility:hidden;"></div>  
+          <div class="wordCard mission"><span>입력할 단어</span></div>
+          <div class="wordCard next next1"></div>
+          <div class="wordCard next next2"></div>
+        </div>
+      </div>
+
+      <!-- 정답입력 인풋타입 -->
+      <div class="input_section"><input placeholder="단어를 입력해주세요." id="input" type="text" /></div>
+
+      <!-- 시작, 리셋버튼 -->
+      <div class="remoteBtn_wrap">
+        <button id="resetBtn" class="remoteBtn">다시하기</button>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
